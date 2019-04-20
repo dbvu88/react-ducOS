@@ -8,8 +8,6 @@ class Home extends Component {
         <header className="Home-header">
 
         </header>
-
-        <Footer></Footer>
       </div>
     );
   }
