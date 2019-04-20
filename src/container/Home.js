@@ -7,7 +7,9 @@ class Container extends Component {
   render() {
     return (
       <div className="Home">
-        Home
+        <header className="Container-header">
+            Duc 1.0
+        </header>
       </div>
     );
   }
