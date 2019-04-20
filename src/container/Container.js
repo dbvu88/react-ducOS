@@ -1,10 +1,12 @@
 
 import React, { Component } from 'react';
 
-import Footer from '../components/Footer'
-import Home from '../components/Home'
-import Menu from '../components/Menu'
-import Tasks from '../components/Tasks'
+import Footer from './Footer'
+import Home from './Home'
+import Menu from './Menu'
+import Tasks from './Tasks'
+
+
 
 import { Route } from 'react-router-dom'
 
@@ -13,22 +15,13 @@ class Container extends Component {
     return (
       <div className="Container">
         <header className="Container-header">
-
+            Duc 1.0
         </header>
-
         <Route exact path='/menu' render={() => <Menu />} />
-
         <Route exact path='/' render={() => <Home />} />
-
         <Route path='/tasks' render={() => <Tasks />} />
-
         <Footer />
-
-        
-
       </div>
-
-      
     );
   }
 }

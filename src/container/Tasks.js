@@ -6,7 +6,7 @@ class Tasks extends Component {
   render() {
     return (
       <div className="Tasks-screen">
-        My Apps
+        Tasks
         {/* <nav>
             <NavLink>Menu</NavLink>
         </nav>
