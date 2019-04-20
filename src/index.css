@@ -17,6 +17,7 @@ code {
   background: black;
   font-family: monospace;
   color: greenyellow;
+  font-size: 1.5em;
 }
 
 :root * {

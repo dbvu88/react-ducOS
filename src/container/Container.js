@@ -1,8 +1,11 @@
 
 import React, { Component } from 'react';
+
 import Footer from '../components/Footer'
 import Home from '../components/Home'
 import Menu from '../components/Menu'
+import Tasks from '../components/Tasks'
+
 import { Route } from 'react-router-dom'
 
 class Container extends Component {
@@ -13,13 +16,15 @@ class Container extends Component {
 
         </header>
 
+        <Route exact path='/menu' render={() => <Menu />} />
+
         <Route exact path='/' render={() => <Home />} />
 
+        <Route path='/tasks' render={() => <Tasks />} />
 
         <Footer />
 
         
-        <Route exact path='/Menu' render={() => <Menu />} />
 
       </div>
 
