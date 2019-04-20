@@ -1,0 +1,7 @@
+ /* position */
+.Container {
+    position: relative;
+    min-width: 300px;
+    min-height: 500px;
+}
+
