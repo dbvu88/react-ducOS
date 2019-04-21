@@ -5,24 +5,24 @@ import './styles/Footer.css'
 
 const Footer = () => {
   return (
-    <div className="home-screen-footer">
-      <nav className="home-screen-nav">
+    <footer className="container-footer">
+      <nav className="container-nav">
           <NavLink 
-          className="home-screen-nav-item" 
-          activeClassName="home-screen-nav-active" 
+          className="container-nav-item" 
+          activeClassName="container-nav-active" 
           exact to='/'>Home</NavLink>
           <NavLink 
-          className="home-screen-nav-item"
-          activeClassName="home-screen-nav-active" 
+          className="container-nav-item"
+          activeClassName="container-nav-active" 
           to='/menu'>Menu</NavLink>
           <NavLink 
-          className="home-screen-nav-item"
-          activeClassName="home-screen-nav-active" 
+          className="container-nav-item"
+          activeClassName="container-nav-active" 
           to='/tasks'>Tasks</NavLink>
       </nav>
 
 
-    </div>
+    </footer>
   );
 }
 

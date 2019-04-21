@@ -6,11 +6,14 @@ import Home from './Home'
 import Menu from './Menu'
 import Tasks from './Tasks'
 import { Route } from 'react-router-dom'
+import "./styles/Container.css"
+import "./styles/shared.css"
 
 // const path = './Tasks'
 // const Tasks = require(`${path}`).default;
 
 class Container extends Component {
+
     state = {
         apps: [{
             title: "MyApp",
@@ -18,17 +21,24 @@ class Container extends Component {
         }],
         tasks: []
     }
-    render() {
+    render = () => {
+        console.log(this.props)
         return (
         <div className="Container">
+            <header>Time</header>
+            <section className='main-display'>
 
-            <Route exact path='/menu' render={() => <Menu apps={this.state.apps}/>} />
-            <Route exact path='/' render={() => <Home  />} />
-            <Route path='/tasks' render={() => <Tasks />} />
+                <Route path='/' component={Home} />
+                <Route exact path='/menu' render={props => <Menu apps={this.state.apps} {...props}/>} />
+                <Route path='/tasks' render={() => <Tasks />} />
+            
+            </section>
             <Footer />
+
         </div>
         );
     }
+    
 }
 
 export default Container;

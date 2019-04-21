@@ -1,15 +1,24 @@
-.home-screen-nav {
+.container-footer {
+    width: 100%;
+    position: relative;
+    /* bottom: 0px; */
+    z-index: 99;
+    border: 1px solid greenyellow; 
+}
+
+.container-nav {
     text-align: center;
     /* height: 100px; */
+    width: 100%;
     margin: 13px;
 }
 
-.home-screen-nav-item {
+.container-nav-item {
     padding: 0px 13px;
     color: green;
 
 }
-.home-screen-nav-active {
+.container-nav-active {
     /* border: solid 5px red; */
     color: greenyellow;
 }
