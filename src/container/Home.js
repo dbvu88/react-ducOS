@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Footer from './Footer'
 import { Route } from 'react-router-dom'
 import  './styles/Home.css'
+import Clock from '../components/home/Clock'
 
 class Container extends Component {
   render() {
@@ -11,6 +12,7 @@ class Container extends Component {
         <header className="Home-screen-header">
             DucOS 1.0
         </header>
+        <Clock />
       </div>
     );
   }

@@ -30,7 +30,6 @@ class Container extends Component {
         <div className="Container">
             <header>Time</header>
             <section className='main-display'>
-
                 <Route path='/' component={Home} />
                 <Route 
                 exact 
