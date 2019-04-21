@@ -8,20 +8,17 @@ import Tasks from './Tasks'
 import { Route } from 'react-router-dom'
 import "./styles/Container.css"
 import "./styles/shared.css"
+import { apps } from "../apps/apps"
+import App from '../apps/about/app'
 
 // theme
 import withTheme from '../utils/withTheme'
 
-// const path = './Tasks'
-// const Tasks = require(`${path}`).default;
 
 class Container extends Component {
 
     state = {
-        apps: [{
-            title: "MyApp",
-            name: "hello-world",
-        }],
+        apps: apps,
         tasks: []
     }
     render = () => {
@@ -36,7 +33,8 @@ class Container extends Component {
                 path='/menu' 
                 render={props => <Menu apps={this.state.apps} {...props}/>} />
                 <Route path='/tasks' render={() => <Tasks />} />
-            
+                <Route path={`/apps/about`} component={App}></Route>
+
             </section>
             <Footer />
 

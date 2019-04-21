@@ -1,9 +1,7 @@
 
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom'
-import myApp from '../hello-world.png'
-import App from '../apps/hello-world/App'
-// import 
+import Shortcut from '../components/menu/Shortcut'
 
 class Menu extends Component {
   
@@ -12,21 +10,10 @@ class Menu extends Component {
     // console.dir(this.props)
     const { apps } = this.props
     return (
-      <div className="Menu-screen">{
-        apps.map(app => (
-          <div
-          className='shortcut'
-          key={app.name}>
-            <Link 
-            to={`apps/${app.name}`} >
-              <img src={myApp} />
-              <br></br>
-              {app.title}
-            </Link>
-          </div>
-        ))
+      <div className="Menu-screen">
+        { apps.map((app, index) => <Shortcut name={app} key={app}/>) }
 
-      }</div>
+      </div>
     );
   }
 }

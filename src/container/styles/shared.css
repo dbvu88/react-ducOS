@@ -1,4 +1,4 @@
-.Home-screen, .Menu-screen, .Tasks-screen {
+.Home-screen, .Menu-screen, .Tasks-screen, .App-screen {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,3 +13,6 @@
 
 
 
+.App-screen {
+    /* background: black; */
+}
