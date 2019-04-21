@@ -1,0 +1,29 @@
+
+.system {
+    --secondary: black;
+    --primary: greenyellow;
+    --tertiary: green;
+}
+
+.tree {
+    --secondary: #989864;
+    --primary: #814020;
+    --tertiary: white;
+}
+
+.superman {
+    --secondary: #d84958;
+    --primary: #2d5883;   
+}
+
+.night {
+    --secondary: #192430;
+    --primary: #bc8b53;
+    /* --tertiary: white; */
+}
+
+.old-paper {
+    --secondary: #d1b794;
+    --primary: #192430;
+    /* --tertiary: white; */
+}

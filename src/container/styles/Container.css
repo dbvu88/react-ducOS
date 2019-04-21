@@ -1,13 +1,16 @@
-/* html, body, #root, .Container {
-} */
 
-/* position */
 .Container {
     position: relative;
+    background: var(--secondary);
+    color: var(--primary);
 }
-
+/* .Container * {
+    background: var(--secondary);
+    color: var(--primary);
+} */
 .main-display {
     position: relative;
     min-height: 400px;
 }
+
 

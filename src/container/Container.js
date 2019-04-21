@@ -9,6 +9,9 @@ import { Route } from 'react-router-dom'
 import "./styles/Container.css"
 import "./styles/shared.css"
 
+// theme
+import withTheme from '../utils/withTheme'
+
 // const path = './Tasks'
 // const Tasks = require(`${path}`).default;
 
@@ -29,7 +32,10 @@ class Container extends Component {
             <section className='main-display'>
 
                 <Route path='/' component={Home} />
-                <Route exact path='/menu' render={props => <Menu apps={this.state.apps} {...props}/>} />
+                <Route 
+                exact 
+                path='/menu' 
+                render={props => <Menu apps={this.state.apps} {...props}/>} />
                 <Route path='/tasks' render={() => <Tasks />} />
             
             </section>
@@ -41,4 +47,4 @@ class Container extends Component {
     
 }
 
-export default Container;
+export default withTheme(Container);
