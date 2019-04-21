@@ -14,20 +14,20 @@
     top: 50%;
     right: 50%;
     transform-origin: 100%;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .hand-hour {
     width: 20%;
     /* transform: rotate(180deg); */
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 
 }
 
 .hand-min {
     width: 30%;
     /* transform: rotate(90deg); */
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 
 }
 
