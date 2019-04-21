@@ -6,11 +6,12 @@ class App extends Component {
     constructor() {
         super()
         const secAngle = this.getHandAngle(new Date().getSeconds(), 60)
-        const hourAngle = this.getHandAngle(new Date().getSeconds(), 60)
-        // const minAngle = this.getHandAngle(new Date().getMinutes(), )
+        const hourAngle = this.getHandAngle(new Date().getSeconds(), 30)
+        const minAngle = this.getHandAngle(new Date().getMinutes(), 60)
         this.state = {
             secAngle: secAngle,
-            hourAngle: hourAngle
+            hourAngle: hourAngle,
+            minAngle: minAngle,
         }
     }
 
@@ -20,11 +21,14 @@ class App extends Component {
     getCurrentTime = () => {
         // console.log(this.state.secAngle)
         const secAngle = this.getHandAngle(new Date().getSeconds(), 60)
-        const hourAngle = this.getHandAngle(new Date().getSeconds(), 60)
+        const hourAngle = this.getHandAngle(new Date().getSeconds(), 30)
+        const minAngle = this.getHandAngle(new Date().getMinutes(), 60)
 
         this.setState({
             secAngle: secAngle,
-            hourAngle: hourAngle
+            hourAngle: hourAngle,
+            minAngle: minAngle
+
         })
     }
 
