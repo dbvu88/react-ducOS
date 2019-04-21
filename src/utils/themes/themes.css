@@ -27,3 +27,9 @@
     --primary: #192430;
     /* --tertiary: white; */
 }
+
+.newspaper {
+    --secondary: #bababa;
+    --primary: #383838;
+    /* --tertiary: white; */
+}

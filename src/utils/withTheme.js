@@ -12,7 +12,7 @@ export default WrappedComponent => {
 
         componentDidMount() {
             this.setState({
-                currentTheme: this.state.themes[3]
+                currentTheme: this.state.themes[4]
             })
         }
 
