@@ -2,6 +2,8 @@
     /* text-align: center; */
     padding: 10px;
     margin: 10px;
+    overflow: scroll;
+    /* height: 100%; */
 }
 
 .application-about-article p::before{
