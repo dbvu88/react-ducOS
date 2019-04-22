@@ -30,8 +30,9 @@
 }
 
 .hand {
+    background: maroon;
     height: 2px;
-    background: var(--primary);
+    /* background: var(--primary); */
     position: absolute;
     top: 50%;
     right: 50%;
