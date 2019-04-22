@@ -7,12 +7,26 @@ class App extends Component {
     console.log('about')
     return (
       <div className="App-container">
-        <article className='application-about-article'>
-          <h2>Welcome to DucOS.</h2>
-          <p>DucOS is a Web Portfolio that I developed that looks and feels like an actual Operating System.</p>
-          <p>However, I do hope that it can become an actual Web Operating System eventually.</p>
-          <p>Therefore, I will continue to integrate more  awesome features and amazing applications to DucOS.</p>
-          <p>Please stay tuned for upcoming features and DucOS applications!!</p>
+        <article className='application-upcoming-changes-article'>
+          <h3>Upcoming Features</h3>
+          <h4>Color Themed Selection</h4>
+          <p>Let users pick a color schemes from built-in Themes List</p>
+          <h4>Multitask</h4>
+          <p>Let users run multiple apps at once, and switch between different apps from Tasks page</p>
+          
+          <h4>Home Screen Weather Display</h4>
+          <p>Display local weather using API Weather</p>
+          
+          <h3>Upcoming App</h3>
+          <h4>Trapkit</h4>
+          <p>A musical instrument that let users play differnt beat using a virtual keyboard</p>
+          <h4>Utilities Apps</h4>
+          <p>Apps such as calulator, stopwatch, note-taking, to-do list, etc </p>
+
+          <h3>Upcoming Game</h3>
+          <h4>Idle/Lazy Game</h4>
+          <p>A game that requires a minimal interaction from the users.</p>
+
         </article>
       </div>
     );
