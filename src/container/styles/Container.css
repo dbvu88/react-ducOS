@@ -14,10 +14,10 @@
 
 .main-display {
     position: relative;
-    /* excluding nav bar's height */
     overflow: scroll;
     height: 100%;
-    /* height: calc(100% - 43px); */
+    top: 0px;
+    bottom: 43px;
 }
 
 

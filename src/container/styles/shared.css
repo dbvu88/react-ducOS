@@ -1,9 +1,12 @@
 .Home-screen, .Menu-screen, .Tasks-screen, .App-screen {
     position: absolute;
     width: 100%;
-
-    /* excluding nav bar  */
-    height: 100%;
+    overflow: scroll;
+    /* height: 100%; */
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     background: black;
 }
 
@@ -13,11 +16,3 @@
     padding: 10px;
 }
 
-.App-screen {
-}
-
-
-
-.App-screen {
-    /* background: black; */
-}
