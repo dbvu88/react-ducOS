@@ -1,6 +1,7 @@
 .Clock-screen {
+    top: 0%;
+    position: absolute;
     width: 100%;
-    height: fit-content;
     margin: auto;
 }
 

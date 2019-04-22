@@ -52,9 +52,7 @@ class App extends Component {
     render() {
         return (
             <div className="Clock-screen">
-                <br></br>
                 <div className='date-display'> {`${this.state.month + 1}/${this.state.date}/${this.state.year}`}</div>   
-                <br></br>
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'

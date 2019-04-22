@@ -10,7 +10,7 @@ class Container extends Component {
     return (
       <div className="Home-screen">
         <header className="Home-screen-header">
-            DucOS 1.0
+            DucOS
         </header>
         <Clock />
       </div>
