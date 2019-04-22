@@ -71,7 +71,7 @@ class App extends Component {
                                     
                     <div 
                     className='watch-display'>
-                        {`${this.state.hour - 12}:${this.state.minute} ${this.state.hour < 12 ? 'AM' : 'PM' }`}
+                        {`${this.state.hour < 12 ? this.state.hour : this.state.hour - 12}:${this.state.minute} ${this.state.hour < 12 ? 'AM' : 'PM' }`}
                     </div>         
                 </div>
                        
