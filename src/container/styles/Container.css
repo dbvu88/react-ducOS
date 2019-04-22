@@ -3,10 +3,13 @@
     position: relative;
     background: black;
     color: yellowgreen;
+    height: 100vh;
+
 }
 
 .main-display {
     position: relative;
+    
     min-height: 400px;
 }
 
