@@ -1,6 +1,9 @@
 .Home-screen, .Menu-screen, .Tasks-screen, .App-screen {
     position: absolute;
     width: 100%;
+
+    /* excluding nav bar  */
+    height: 100%;
     background: black;
 }
 

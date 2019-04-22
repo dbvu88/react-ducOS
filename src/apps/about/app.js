@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     console.log('about')
     return (
-      <div className="App-screen">
+      <div className="App-container">
         <article className='application-about-article'>
           <h2>Welcome to DucOS.</h2>
           <p>DucOS is just a Web Portfolio that I developed to look and feel like an operating system.</p>

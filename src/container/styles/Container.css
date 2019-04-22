@@ -1,17 +1,21 @@
 
+:root, html, body, #root, .Container {
+    height: 100%;
+    width: 100%;
+}
+
 .Container {
     position: relative;
     background: black;
     color: yellowgreen;
-    /* height: 100vh; */
-
+    top: 0px;
+    bottom: 0px;
 }
 
 .main-display {
     position: relative;
-    /* height: calc(100% - 100px); */
-    min-height: 400px;
-
+    /* excluding nav bar's height */
+    height: calc(100% - 43px);
 }
 
 

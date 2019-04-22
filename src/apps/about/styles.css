@@ -1,6 +1,12 @@
+.App-container {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    padding: 10px;
+}
+
 .application-about-article {
     /* text-align: center; */
-    padding: 10px;
     margin: 10px;
     overflow: scroll;
     /* height: 100%; */

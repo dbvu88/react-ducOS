@@ -28,3 +28,7 @@
     --additional-color: #bababa;
     --primary-color: #383838;
 }
+
+.themed-component {
+    height: 100%;
+}

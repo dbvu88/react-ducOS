@@ -18,7 +18,7 @@ export default WrappedComponent => {
 
         render = () => {
             return (
-                <div className={`themed-container ${this.state.currentTheme}`}>
+                <div className={`themed-component ${this.state.currentTheme}`}>
                     <WrappedComponent />
                 </div>
             )
