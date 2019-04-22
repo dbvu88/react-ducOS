@@ -9,7 +9,7 @@ import { Route } from 'react-router-dom'
 import "./styles/Container.css"
 import "./styles/shared.css"
 import { apps } from "../apps/apps"
-import App from '../apps/about/app'
+import App from './App'
 
 // theme
 import withTheme from '../utils/withTheme'
@@ -33,7 +33,7 @@ class Container extends Component {
                 path='/menu' 
                 render={props => <Menu apps={this.state.apps} {...props}/>} />
                 <Route path='/tasks' render={() => <Tasks />} />
-                <Route path={`/apps/about`} component={App}></Route>
+                <Route path={`/apps/:app`} component={App} />
 
             </section>
             <Footer />
