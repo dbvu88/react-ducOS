@@ -11,6 +11,8 @@ class App extends Component {
         const secHand = this.getHandAngle(new Date().getSeconds(), 60)
 
         this.state = {
+            minute: new Date().getMinutes(),
+            hour: new Date().getHours(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -27,6 +29,8 @@ class App extends Component {
         const secHand = this.getHandAngle(new Date().getSeconds(), 60)
 
         this.setState({
+            minute: new Date().getMinutes(),
+            hour: new Date().getHours(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -41,20 +45,28 @@ class App extends Component {
 
     render() {
         return (
-        <div className="clock-display">
-            <div 
-            className='hand hand-hour'
-            style={this.state.hourAngle}
-            ></div>        
-            <div 
-            className='hand hand-min'
-            style={this.state.minAngle}
-            ></div>        
-            <div 
-            className='hand hand-sec'
-            style={this.state.secAngle}
-            ></div>        
-        </div>
+            <div className="Clock-screen">
+                <div className="clock-display">
+                    <div 
+                    className='hand hand-hour'
+                    style={this.state.hourAngle}
+                    ></div>        
+                    <div 
+                    className='hand hand-min'
+                    style={this.state.minAngle}
+                    ></div>        
+                    <div 
+                    className='hand hand-sec'
+                    style={this.state.secAngle}
+                    ></div>
+                                    
+                    <div 
+                    className='watch-display'>
+                        {`${this.state.hour - 12}:${this.state.minute} ${this.state.hour < 12 ? 'AM' : 'PM' }`}
+                    </div>        
+                </div>
+            </div>
+
     );
   }
 }

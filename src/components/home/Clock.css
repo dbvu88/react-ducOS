@@ -1,9 +1,23 @@
+.Clock-screen {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.watch-display {
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+
 .clock-display {
     position: relative;
     width: 200px;
     height: 200px;
     border: solid 2px var(--primary);
-    margin: auto;
+    /* margin: auto; */
     border-radius: 50%; 
 }
 
@@ -14,25 +28,17 @@
     top: 50%;
     right: 50%;
     transform-origin: 100%;
-    /* transition: all 0.5s; */
 }
 
 .hand-hour {
     width: 20%;
-    /* transform: rotate(180deg); */
-    /* transition: all 0.5s; */
-
 }
 
 .hand-min {
     width: 30%;
-    /* transform: rotate(90deg); */
-    /* transition: all 0.5s; */
 
 }
 
 .hand-sec {
     width: 40%;
-    /* transform: rotate(270deg); */
-    /* transition: all 0.1s; */
 }
