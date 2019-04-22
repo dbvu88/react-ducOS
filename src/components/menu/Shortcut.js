@@ -11,7 +11,7 @@ class Shortcut extends Component {
     const icon = require(`../../apps/${name}/icon.png`)
     return (
 
-      <div className='app-shortcut'>
+      <div className='application-shortcut'>
         <Link to={`/apps/${name}`}>
             <img src={icon} />
             <br></br>{name}
