@@ -6,13 +6,13 @@ body {
 
 a {
   text-decoration: none;
-  color: yellowgreen;
+  color: #192430;
 }
 
 :root {
-  --primary-color: black;
+  --primary-color: #bc8b53;
   --additional-color: white;
-  background: black;
+  background: #bc8b53;
   font-family: monospace;
   font-size: 1.5em;
 }

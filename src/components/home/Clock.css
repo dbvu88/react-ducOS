@@ -25,7 +25,7 @@
     position: relative;
     width: 200px;
     height: 200px;
-    border: solid 2px yellowgreen;
+    border: solid 2px #192430;
     margin: auto;
     border-radius: 50%; 
 }
@@ -33,7 +33,7 @@
 .hand {
     background: maroon;
     height: 2px;
-    /* background: yellowgreen; */
+    /* background: #192430; */
     position: absolute;
     top: 50%;
     right: 50%;

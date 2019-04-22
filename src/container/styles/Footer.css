@@ -3,16 +3,16 @@
     position: fixed;
     z-index: 99;
     bottom: 0px;
-    background-color: yellowgreen;
+    background-color: #192430;
 }
 
 .container-nav {
     text-align: center;
-    background-color: yellowgreen;
+    background-color: #192430;
 
     width: 100%;
     padding: 8px 0px;
-    border: 2px solid yellowgreen; 
+    border: 2px solid #192430; 
     height: 100%;
 
 }
@@ -20,14 +20,14 @@
 .container-nav-item {
     /* width: 30%; */
     padding: 8px 21px;
-    color: black;
+    color: #bc8b53;
     margin: 0px 8px;
     transition: all 0.25s;
 
 }
 .container-nav-active {
-    color: yellowgreen;
-    background: black;
+    color: #192430;
+    background: #bc8b53;
     transition: all 0.25s;
 }
 
