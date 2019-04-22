@@ -13,6 +13,9 @@ class App extends Component {
         this.state = {
             minute: new Date().getMinutes(),
             hour: new Date().getHours(),
+            date: new Date().getDate(),
+            month: new Date().getMonth(),
+            year: new Date().getFullYear(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -31,6 +34,9 @@ class App extends Component {
         this.setState({
             minute: new Date().getMinutes(),
             hour: new Date().getHours(),
+            date: new Date().getDate(),
+            month: new Date().getMonth(),
+            year: new Date().getFullYear(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -46,6 +52,9 @@ class App extends Component {
     render() {
         return (
             <div className="Clock-screen">
+                <br></br>
+                <div className='date-display'> {`${this.state.month + 1}/${this.state.date}/${this.state.year}`}</div>   
+                <br></br>
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'
@@ -63,8 +72,9 @@ class App extends Component {
                     <div 
                     className='watch-display'>
                         {`${this.state.hour - 12}:${this.state.minute} ${this.state.hour < 12 ? 'AM' : 'PM' }`}
-                    </div>        
+                    </div>         
                 </div>
+                       
             </div>
 
     );

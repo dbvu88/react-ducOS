@@ -12,6 +12,14 @@
     text-align: center;
 }
 
+.date-display {
+    /* position: absolute;
+    top: 75%;
+    left: 0px;
+    right: 0px; */
+    text-align: center;
+}
+
 .clock-display {
     position: relative;
     width: 200px;
