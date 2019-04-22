@@ -16,8 +16,8 @@
     position: relative;
     /* excluding nav bar's height */
     overflow: scroll;
-
-    height: calc(100% - 43px);
+    height: 100%;
+    /* height: calc(100% - 43px); */
 }
 
 

@@ -1,6 +1,6 @@
 .container-footer {
     width: 100%;
-    position: relative;
+    position: fixed;
     z-index: 99;
     bottom: 0px;
     background-color: yellowgreen;
