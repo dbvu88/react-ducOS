@@ -2,31 +2,30 @@
     width: 100%;
     position: relative;
     z-index: 99;
-    /* border: 1px solid var(--primary);  */
+    /* border: 1px solid var(--primary-color);  */
 }
 
 .container-nav {
     text-align: center;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
 
     width: 100%;
     padding: 8px 0px;
-    border: 2px solid var(--primary); 
+    border: 2px solid var(--primary-color); 
 
 }
 
 .container-nav-item {
     /* width: 30%; */
     padding: 8px 21px;
-    color: var(--secondary);
+    color: var(--secondary-color);
     margin: 0px 8px;
     transition: all 0.25s;
 
 }
 .container-nav-active {
-    color: var(--primary);
-    background: var(--secondary);
+    color: var(--primary-color);
+    background: var(--secondary-color);
     transition: all 0.25s;
-
 }
 

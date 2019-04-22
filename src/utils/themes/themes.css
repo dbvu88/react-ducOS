@@ -1,35 +1,35 @@
 
 .system {
-    --secondary: black;
-    --primary: greenyellow;
+    --secondary-color: black;
+    --primary-color: greenyellow;
     --tertiary: green;
 }
 
 .tree {
-    --secondary: #989864;
-    --primary: #814020;
+    --secondary-color: #989864;
+    --primary-color: #814020;
     --tertiary: white;
 }
 
 .superman {
-    --secondary: #d84958;
-    --primary: #2d5883;   
+    --secondary-color: #d84958;
+    --primary-color: #2d5883;   
 }
 
 .night {
-    --secondary: #192430;
-    --primary: #bc8b53;
+    --secondary-color: #192430;
+    --primary-color: #bc8b53;
     /* --tertiary: white; */
 }
 
 .old-paper {
-    --secondary: #d1b794;
-    --primary: #192430;
+    --secondary-color: #d1b794;
+    --primary-color: #192430;
     /* --tertiary: white; */
 }
 
 .newspaper {
-    --secondary: #bababa;
-    --primary: #383838;
+    --secondary-color: #bababa;
+    --primary-color: #383838;
     /* --tertiary: white; */
 }

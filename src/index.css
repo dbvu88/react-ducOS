@@ -15,12 +15,12 @@ code {
 
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 :root {
-  --secondary: white;
-  --primary: black;
+  --secondary-color: white;
+  --primary-color: black;
   background: black;
   font-family: monospace;
   font-size: 1.5em;
