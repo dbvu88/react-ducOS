@@ -1,5 +1,12 @@
 .Menu-screen {
-    text-align: center;
+   
+
+    text-align: left;
+}
+@media only screen and (max-width: 500px) {
+    .Menu-screen {
+        text-align: center;
+    }
 }
 .application-shortcut {
     box-sizing: border-box;
