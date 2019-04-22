@@ -1,35 +1,30 @@
 
 .system {
-    --secondary-color: black;
     --primary-color: greenyellow;
-    --tertiary: green;
+    --additional-color: black;
 }
 
 .tree {
-    --secondary-color: #989864;
     --primary-color: #814020;
-    --tertiary: white;
+    --additional-color: #989864;
 }
 
 .superman {
-    --secondary-color: #d84958;
-    --primary-color: #2d5883;   
+    --primary-color: #2d5883; 
+    --additional-color: #d84958;  
 }
 
 .night {
-    --secondary-color: #192430;
     --primary-color: #bc8b53;
-    /* --tertiary: white; */
+    --additional-color: #192430;
 }
 
 .old-paper {
-    --secondary-color: #d1b794;
+    --additional-color: #d1b794;
     --primary-color: #192430;
-    /* --tertiary: white; */
 }
 
 .newspaper {
-    --secondary-color: #bababa;
+    --additional-color: #bababa;
     --primary-color: #383838;
-    /* --tertiary: white; */
 }

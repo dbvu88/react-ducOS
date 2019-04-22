@@ -1,11 +1,11 @@
 
 .Container {
     position: relative;
-    background: var(--secondary-color);
+    background: var(--additional-color);
     color: var(--primary-color);
 }
 /* .Container * {
-    background: var(--secondary-color);
+    background: var(--additional-color);
     color: var(--primary-color);
 } */
 .main-display {
