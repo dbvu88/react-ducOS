@@ -5,5 +5,6 @@
 
 export const apps = [
     'about',
-    'first-app'
+    'first-app',
+    'upcoming-changes'
 ]

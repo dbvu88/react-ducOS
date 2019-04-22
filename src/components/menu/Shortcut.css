@@ -1,6 +1,13 @@
+.Menu-screen {
+    text-align: center;
+}
 .application-shortcut {
+    box-sizing: border-box;
     display: inline-block;
     text-align: center;
     margin: 5px;
     padding: 5px;
+    width: 90px;
+    height: 100px;
+    vertical-align: top;
 }
