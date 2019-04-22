@@ -1,12 +1,12 @@
 
 .Container {
     position: relative;
-    background: var(--additional-color);
-    color: var(--primary-color);
+    background: black;
+    color: yellowgreen;
 }
 /* .Container * {
-    background: var(--additional-color);
-    color: var(--primary-color);
+    background: black;
+    color: yellowgreen;
 } */
 .main-display {
     position: relative;

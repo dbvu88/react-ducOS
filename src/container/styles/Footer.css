@@ -2,30 +2,30 @@
     width: 100%;
     position: relative;
     z-index: 99;
-    /* border: 1px solid var(--primary-color);  */
+    /* border: 1px solid yellowgreen;  */
 }
 
 .container-nav {
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: yellowgreen;
 
     width: 100%;
     padding: 8px 0px;
-    border: 2px solid var(--primary-color); 
+    border: 2px solid yellowgreen; 
 
 }
 
 .container-nav-item {
     /* width: 30%; */
     padding: 8px 21px;
-    color: var(--additional-color);
+    color: black;
     margin: 0px 8px;
     transition: all 0.25s;
 
 }
 .container-nav-active {
-    color: var(--primary-color);
-    background: var(--additional-color);
+    color: yellowgreen;
+    background: black;
     transition: all 0.25s;
 }
 
