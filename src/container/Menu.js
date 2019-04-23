@@ -5,14 +5,25 @@ import Shortcut from '../components/menu/Shortcut'
 
 class Menu extends Component {
   
+  state = {
+    style: null
+  }
+  // componentWillUnmount() {
+  //   this.setState({
+  //     style: {
+  //       opacity: 0,
+  //       transition: 'opacity 1s'
+  //     }
+  //   })
+  // }
+
   render = () => {
 
     // console.dir(this.props)
     const { apps } = this.props
     return (
-      <div className="Menu-screen">
+      <div className="Menu-screen" style={this.state.style}>
         { apps.map((app, index) => <Shortcut name={app} key={app}/>) }
-
       </div>
     );
   }
