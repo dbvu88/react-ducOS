@@ -14,10 +14,9 @@
 
 .main-display {
     position: relative;
-    overflow: scroll;
+    overflow: auto;
     height: 100%;
     top: 0px;
-    bottom: 43px;
 }
 
 

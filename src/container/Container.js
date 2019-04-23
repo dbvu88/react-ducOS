@@ -24,7 +24,7 @@ class Container extends Component {
     render = () => {
         console.log(this.props)
         return (
-        <div className="Container">
+        <div className="Container" style={this.props.style}>
             {/* <header>Time</header> */}
             <section className='main-display'>
                 <Route path='/' component={Home} />

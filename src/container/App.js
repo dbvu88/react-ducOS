@@ -6,6 +6,7 @@ class App extends Component {
         console.log(this.props)
         const appName = this.props.match.params.app
         const Application = require(`../apps/${appName}/app`).default
+        // const stylesheet = require(`../apps/${appName}/app`).default
 
         return (
             <div className="App-screen">
