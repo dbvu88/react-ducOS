@@ -7,7 +7,9 @@
     height: 100%;
     overflow: auto;
 }
-
+.application-about-article {
+    line-height: 2;
+}
 .application-about-article a {
     color: mediumblue;
 }
