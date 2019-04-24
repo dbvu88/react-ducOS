@@ -10,15 +10,15 @@ const Footer = () => {
           <NavLink 
           className="container-nav-item" 
           activeClassName="container-nav-active" 
-          exact to='/'>Home</NavLink>
+          exact to='/'>HOME</NavLink>
           <NavLink 
           className="container-nav-item"
           activeClassName="container-nav-active" 
-          to='/menu'>Menu</NavLink>
+          to='/menu'>MENU</NavLink>
           <NavLink 
           className="container-nav-item"
           activeClassName="container-nav-active" 
-          to='/tasks'>Tasks</NavLink>
+          to='/tasks'>TASKS</NavLink>
       </nav>
 
 

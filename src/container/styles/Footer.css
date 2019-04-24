@@ -18,18 +18,20 @@
 
 .container-nav-item {
     /* width: 30%; */
+    box-sizing: border-box;
     cursor: pointer;
-    padding: 0px 21px;
+    padding: 0px 8px;
     color: #bc8b53;
     margin: 0px 8px;
     transition: all 0.25s;
-    font-size: 1.5em;
+    font-size: 1.25em;
 
 }
 .container-nav-active {
     color: #192430;
     background: #bc8b53;
     transition: all 0.25s;
+    font-family: 'Major Mono Display', monospace;
 }
 /* 
 .container-nav-active + .Menu-screen {
