@@ -14,16 +14,11 @@ export default WrappedComponent => {
         }
 
         componentDidMount() {
-            // this.setState({
-            //     currentTheme: this.state.themes[4]
-            // })
         }
 
         render = () => {
             return (
-                // <div className={`themed-component`} style={this.state.style}>
                 <WrappedComponent style={this.state.style}/>
-                // </div>
             )
         }
         
