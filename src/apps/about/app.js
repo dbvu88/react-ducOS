@@ -21,7 +21,7 @@ class App extends Component {
 
           <p><a href='https://github.com/vud531/react-ducOS'>Click here to go to DucOS git repo!</a></p>
           <p><Link to='/apps/upcoming-changes'>Click here to read my notes on upcoming changes!</Link></p>
-          <p>I also love meeting new people, please click one the icons below to connect with me.</p>
+          <p>I also love meeting new people, please click one of the icons below to connect with me.</p>
           
           <a href='https://www.linkedin.com/in/dbv135/'><img className='social-media' src={linkedin} /></a>
           <a href='https://github.com/vud531'><img className='social-media' src={github} /></a>
