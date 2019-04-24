@@ -1,13 +1,15 @@
 .Clock-screen {
-    top: calc(50% - 125px);
+    /* exclude clock's height */
+    top: calc(50% - 146px);
     position: absolute;
     width: 100%;
     margin: auto;
 }
 
 .watch-display {
-    position: absolute;
-    top: 25%;
+    position: relative;
+    /* top: 25%; */
+    /* top: 100%; */
     left: 0px;
     right: 0px;
     text-align: center;

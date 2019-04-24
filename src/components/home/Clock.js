@@ -50,11 +50,11 @@ class App extends Component {
                     style={secAngle}
                     ></div>
                                     
-                    <div 
-                    className='watch-display'>
-                        {`${hour%12}:${min}${ampm}`}
-                    </div>         
-                </div>           
+                </div>    
+                        
+                <div 
+                    className='watch-display'> {`${hour%12}:${min}${ampm}`}
+                </div>        
             </div>
         );
     }
