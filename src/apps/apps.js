@@ -4,7 +4,16 @@
 // }
 
 export const apps = [
-    'about',
-    'first-app',
-    'upcoming-changes'
+    { 
+        path: 'about',
+        name: 'About'
+    },
+    {
+        path: 'first-app',
+        name: 'First App'
+    },
+    {
+        path: 'upcoming-changes',
+        name: 'Future Updates'
+    }
 ]

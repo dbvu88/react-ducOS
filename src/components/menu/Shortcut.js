@@ -7,10 +7,9 @@ import './Shortcut.css'
 
 class Shortcut extends Component {
   render() {
-    const { name } = this.props
-    const icon = require(`../../apps/${name}/icon.png`)
+    const { name, path } = this.props
+    const icon = require(`../../apps/${path}/icon.png`)
     return (
-
       <div className='application-shortcut'>
         <Link to={`/apps/${name}`}>
             <img src={icon} />

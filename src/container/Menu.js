@@ -23,7 +23,7 @@ class Menu extends Component {
     const { apps } = this.props
     return (
       <div className="Menu-screen" style={this.state.style}>
-        { apps.map((app, index) => <Shortcut name={app} key={app}/>) }
+        { apps.map((app, index) => <Shortcut {...app} key={app.path}/>) }
       </div>
     );
   }

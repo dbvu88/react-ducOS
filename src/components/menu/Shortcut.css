@@ -1,9 +1,7 @@
 .Menu-screen {
-   
-
     text-align: left;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: px) {
     .Menu-screen {
         text-align: center;
     }
@@ -13,8 +11,8 @@
     display: inline-block;
     text-align: center;
     margin: 5px;
-    padding: 5px;
-    width: 90px;
+    /* padding: 5px; */
+    width: 70px;
     height: 100px;
     vertical-align: top;
     font-size: 19px;
