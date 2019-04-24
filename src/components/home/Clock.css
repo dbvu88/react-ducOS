@@ -1,6 +1,6 @@
 .Clock-screen {
     /* exclude clock's height */
-    top: calc(50% - 146px);
+    top: calc(50% - (78px));
     position: absolute;
     width: 100%;
     margin: auto;
