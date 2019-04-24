@@ -11,11 +11,6 @@ class App extends Component {
         const secHand = this.getHandAngle(new Date().getSeconds(), 60)
 
         this.state = {
-            minute: new Date().getMinutes(),
-            hour: new Date().getHours(),
-            date: new Date().getDate(),
-            month: new Date().getMonth(),
-            year: new Date().getFullYear(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -32,11 +27,6 @@ class App extends Component {
         const secHand = this.getHandAngle(new Date().getSeconds(), 60)
 
         this.setState({
-            minute: new Date().getMinutes(),
-            hour: new Date().getHours(),
-            date: new Date().getDate(),
-            month: new Date().getMonth(),
-            year: new Date().getFullYear(),
             secAngle: secHand,
             minAngle: minHand,
             hourAngle: hourHand,
@@ -50,9 +40,17 @@ class App extends Component {
     )
 
     render() {
+        
+        const minute = new Date().getMinutes()
+        const min = minute > 9 ? minute : '0' + minute
+        const hour = new Date().getHours()
+        const ampm = hour < 12 ? 'AM' : 'PM' 
+        const date = new Date().getDate() 
+        const month = new Date().getMonth()
+        const year = new Date().getFullYear()
         return (
             <div className="Clock-screen">
-                <div className='date-display'> {`${this.state.month + 1}/${this.state.date}/${this.state.year}`}</div>   
+                <div className='date-display'>{new Date().toLocaleDateString()}</div>   
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'
@@ -69,7 +67,7 @@ class App extends Component {
                                     
                     <div 
                     className='watch-display'>
-                        {`${this.state.hour < 12 ? this.state.hour : this.state.hour - 12}:${this.state.minute} ${this.state.hour < 12 ? 'AM' : 'PM' }`}
+                        {`${hour%12}:${min}${ampm}`}
                     </div>         
                 </div>
                        
