@@ -5,32 +5,15 @@ import './Clock.css'
 class App extends Component {
     constructor() {
         super()
-        
-        const hourHand = this.getHandAngle(new Date().getHours(), 12)
-        const minHand = this.getHandAngle(new Date().getMinutes(), 60)
-        const secHand = this.getHandAngle(new Date().getSeconds(), 60)
-
-        this.state = {
-            secAngle: secHand,
-            minAngle: minHand,
-            hourAngle: hourHand,
-        }
+        this.state = { datetime: new Date() }
     }
 
     componentWillMount = () => {
         setInterval(this.getCurrentTime, 1000)
     }
-    getCurrentTime = () => {
-        
-        const hourHand = this.getHandAngle(new Date().getHours(), 12)
-        const minHand = this.getHandAngle(new Date().getMinutes(), 60)
-        const secHand = this.getHandAngle(new Date().getSeconds(), 60)
 
-        this.setState({
-            secAngle: secHand,
-            minAngle: minHand,
-            hourAngle: hourHand,
-        })
+    getCurrentTime = () => {
+        this.setState({ datetime: new Date() })
     }
 
     getHandAngle = (value, tick) => (
@@ -39,42 +22,42 @@ class App extends Component {
         }
     )
 
-    render() {
+    render = () => {
         
         const minute = new Date().getMinutes()
         const min = minute > 9 ? minute : '0' + minute
         const hour = new Date().getHours()
-        const ampm = hour < 12 ? 'AM' : 'PM' 
-        const date = new Date().getDate() 
-        const month = new Date().getMonth()
-        const year = new Date().getFullYear()
+        const ampm = hour < 12 ? 'AM' : 'PM'
+        
+        const hourAngle = this.getHandAngle(hour, 12)
+        const minAngle = this.getHandAngle(min, 60)
+        const secAngle = this.getHandAngle(new Date().getSeconds(), 60)
+
         return (
             <div className="Clock-screen">
                 <div className='date-display'>{new Date().toLocaleDateString()}</div>   
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'
-                    style={this.state.hourAngle}
+                    style={hourAngle}
                     ></div>        
                     <div 
                     className='hand hand-min'
-                    style={this.state.minAngle}
+                    style={minAngle}
                     ></div>        
                     <div 
                     className='hand hand-sec'
-                    style={this.state.secAngle}
+                    style={secAngle}
                     ></div>
                                     
                     <div 
                     className='watch-display'>
                         {`${hour%12}:${min}${ampm}`}
                     </div>         
-                </div>
-                       
+                </div>           
             </div>
-
-    );
-  }
+        );
+    }
 }
 
 export default App;
