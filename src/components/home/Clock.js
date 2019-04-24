@@ -32,10 +32,12 @@ class App extends Component {
         const hourAngle = this.getHandAngle(hour, 12)
         const minAngle = this.getHandAngle(min, 60)
         const secAngle = this.getHandAngle(new Date().getSeconds(), 60)
-
+        const day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'][new Date().getDay()]
+        const month = ['January', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][new Date().getMonth()]
+        const date = new Date().getDate()
         return (
             <div className="Clock-screen">
-                <div className='date-display'>{new Date().toLocaleDateString()}</div>   
+                <div className='date-display'>{day}, {month} {date}</div>   
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'
