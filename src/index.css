@@ -13,6 +13,6 @@ a {
   --primary-color: #bc8b53;
   --additional-color: white;
   background: #bc8b53;
-  font-family: monospace;
+  font-family: 'Nova Mono', monospace;
   font-size: 1.5em;
 }

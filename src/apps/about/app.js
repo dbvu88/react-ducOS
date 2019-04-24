@@ -14,12 +14,14 @@ class App extends Component {
       <div className="App-container">
         <article className='application-about-article'>
           <h2>Welcome to DucOS.</h2>
-          <p>DucOS is a Web Portfolio that I developed to look and feel like an actual Operating System.</p>
+          <p>DucOS is a Interactive Portfolio that I developed to look and feel like an actual Operating System.</p>
           <p>However, I do hope that it can become an actual Web Operating System eventually.</p>
           <p>Therefore, I will continue to integrate more  awesome features and amazing applications to DucOS.</p>
           <p>Please stay tuned for upcoming features and DucOS applications!!</p>
+
+          <p><a href='https://github.com/vud531/react-ducOS'>Click here to go to DucOS git repo!</a></p>
           <p><Link to='/apps/upcoming-changes'>Click here to read my notes on upcoming changes!</Link></p>
-          <p>I also love to connect with others, please contact me at:</p>
+          <p>I also love meeting new people, please click one the icons below to connect with me.</p>
           
           <a href='https://www.linkedin.com/in/dbv135/'><img className='social-media' src={linkedin} /></a>
           <a href='https://github.com/vud531'><img className='social-media' src={github} /></a>

@@ -8,7 +8,8 @@
     overflow: auto;
 }
 
-.application-about-article {
+.application-about-article a {
+    color: mediumblue;
 }
 
 .application-about-article p::before{
@@ -20,3 +21,4 @@
     margin: 10px;
     vertical-align: middle;
 }
+
