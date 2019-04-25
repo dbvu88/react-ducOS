@@ -23,7 +23,7 @@
     padding: 0px 8px;
     color: #bc8b53;
     margin: 0px 8px;
-    transition: all 0.25s;
+    transition: background-color 0.1s, box-shadow 0.25s;
     font-size: 1.25em;
 
 }
@@ -34,9 +34,11 @@
 
 
 .container-nav-active {
+    box-shadow: inset 3px 3px 21px 3px rgba(25,36,48,0.31);
+
     color: #192430;
     background: #bc8b53;
-    transition: all 0.25s;
+    transition: background-color 0.1s, box-shadow 0.25s;
     font-family: 'Major Mono Display', monospace;
     text-shadow: 1px 1px 3px rgba(25,36,48,0.31);
 }
