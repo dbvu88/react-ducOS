@@ -4,6 +4,9 @@
     position: absolute;
     width: 100%;
     margin: auto;
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 1px 1px 3px rgba(25,36,48,0.31);
+
 }
 
 .watch-display {
@@ -30,9 +33,11 @@
     /* top: 50%; */
     width: 100px;
     height: 100px;
-    border: solid 1px #192430;
+    /* border: solid 1px #192430; */
     margin: auto;
     border-radius: 50%; 
+    background: #bc8b53;
+    box-shadow: -4px 19px 60px 15px rgba(25,36,48,0.21);
 }
 
 .hand {
@@ -43,6 +48,7 @@
     top: 50%;
     right: 50%;
     transform-origin: 100%;
+    box-shadow: 0px 0px 10px 1px rgba(25,36,48,0.21);
 }
 
 .hand-hour {

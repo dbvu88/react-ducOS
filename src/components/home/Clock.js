@@ -37,7 +37,9 @@ class App extends Component {
         const date = new Date().getDate()
         return (
             <div className="Clock-screen">
-                <div className='date-display'>{day}, {month} {date}</div>   
+                <div className='date-display'>{day}, {month} {date}</div> 
+                <br></br>
+  
                 <div className="clock-display">
                     <div 
                     className='hand hand-hour'
@@ -46,14 +48,16 @@ class App extends Component {
                     <div 
                     className='hand hand-min'
                     style={minAngle}
-                    ></div>        
+                    ></div>    
+    
                     <div 
                     className='hand hand-sec'
                     style={secAngle}
                     ></div>
                                     
                 </div>    
-                        
+                <br></br>
+
                 <div 
                     className='watch-display'> {`${hour%12}:${min}${ampm}`}
                 </div>        

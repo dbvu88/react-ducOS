@@ -13,9 +13,9 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: #bc8b53;
-    /* transition: all 1s; */
-    /* opacity: 0; */
+    /* background: #bc8b53; */
+    background: rgb(188,139,83);
+    background: radial-gradient(circle, rgba(188,139,83,1) 0%, rgba(153,108,56,1) 100%);
     animation-name: fadeIn;
     animation-duration: 0.5s;
 }

@@ -27,11 +27,18 @@
     font-size: 1.25em;
 
 }
+
+.container-nav-item:first-child{
+    margin: 0px 0px 8px;
+}
+
+
 .container-nav-active {
     color: #192430;
     background: #bc8b53;
     transition: all 0.25s;
     font-family: 'Major Mono Display', monospace;
+    text-shadow: 1px 1px 3px rgba(25,36,48,0.31);
 }
 /* 
 .container-nav-active + .Menu-screen {
